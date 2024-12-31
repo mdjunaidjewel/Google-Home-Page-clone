@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px 25px;
+}
+.navbar a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: gray;
+    padding: 2px 5px;
+
+}
+#navbar a:hover{
+    text-decoration: underline;
+}
+.menu-icon{
+    width: 30px;
+    padding: 5px;
+}
+.menu-icon:hover{
+    opacity: 0.7;
+}
+.form-area{
+    width: 60%;
+    margin: 90px auto 20px auto;
+}
+.form-area > img{
+    display:block;
+    margin: 15px auto;
+}
+.search-box{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.search-input{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 5px 7px 5px rgba(128, 128, 128, 0.626);
+    padding-left: 35px;
+}
+.search-icon{
+    opacity: 0.6;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+
+}
+.mic-icon{
+    position: absolute;
+    width: 13px;
+    top: 10px;
+    right: 50px;
+}
+.camera-icon {
+    position: absolute;
+    width: 25px;
+    top: 7.5px;
+    right: 20px;
+}
+.cards{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.single-card{
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.single-card i{
+    color: red;
+    margin-bottom: 10px;
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+}
+.single-card:hover{
+    background-color: rgba(67, 255, 100, 0.25);
+    border-radius: 5px;
+}
+
+/* Resposive Design */
+@media screen and (max-width:420px) {
+    .navbar{
+        align-items: center;
+        margin: 10px 25px;
+    }
+    .navbar a{
+        font-size: 9px;
+
+    }
+    .menu-icon{
+        width: 20px;
+    }
+    .form-area {
+        width: 100%;
+        margin: 50px auto 20px auto;
+    }
+    .form-area{
+        width: 100%;
+        margin: 80px auto 15px auto;
+    }
+    .form-area > img{
+        width: 100px;
+        display:block;
+        margin: 10px auto;
+    }
+    .search-box{
+        width: 65%;
+        margin: 0 auto;
+
+    }
+    .search-input{
+        font-size: 10px;
+        padding: 8px;
+        padding-left: 30px;
+    }
+    .search-icon{
+        top: 10px;
+        left: 12px;
+    
+    }
+    .mic-icon{
+        width: 11px;
+        top: 8px;
+        right: 40px;
+    }
+    .camera-icon {
+        width: 20px;
+        top: 6.5px;
+        right: 15px;
+    }
+    .cards{
+        width: 100%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .single-card{
+        padding: 12px;
+        text-align: center;
+    }
+    .single-card i{
+        margin: 0px auto;
+        margin-bottom: 5px;
+        padding: 12px;
+    }
+    .single-card:hover{
+        background-color: rgba(67, 255, 100, 0.25);
+        border-radius: 5px;
+    }
+
+}
